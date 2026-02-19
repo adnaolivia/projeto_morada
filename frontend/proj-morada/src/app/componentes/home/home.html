@@ -63,52 +63,13 @@
 
     <!-- sessao do mural -->
     <section class="memories container">
-      <div class="card">
-        <img src="images/mufasa.jpg" alt="Mufasa">
-        <h3>Mufasa</h3>
-        <span>DD/MM/AAAA - DD/MM/AAAA</span>
-      </div>
-
-      <div class="card">
-        <img src="images/gwen-stacy.jpg" alt="Gwen Stacy">
-        <h3>Gwen Stacy</h3>
-        <span>DD/MM/AAAA - DD/MM/AAAA</span>
-      </div>
-
-      <div class="card">
-        <img src="images/padme.jpg" alt="Padmé Amidala">
-        <h3>Padmé Amidala</h3>
-        <span>DD/MM/AAAA - DD/MM/AAAA</span>
-      </div>
-
-      <div class="card">
-        <img src="images/dumbledore.jpg" alt="Alvo Dumbledore">
-        <h3>Alvo Dumbledore</h3>
-        <span>DD/MM/AAAA - DD/MM/AAAA</span>
-      </div>
-
-      <div class="card">
-        <img src="images/azuma.jpg" alt="Azuma Sarutobi">
-        <h3>Azuma Sarutobi</h3>
-        <span>DD/MM/AAAA - DD/MM/AAAA</span>
-      </div>
-
-      <div class="card">
-        <img src="images/tadashi.jpg" alt="Tadashi Hamada">
-        <h3>Tadashi Hamada</h3>
-        <span>DD/MM/AAAA - DD/MM/AAAA</span>
-      </div>
-
-      <div class="card">
-        <img src="images/stoico.jpg" alt="Stoico">
-        <h3>Stoico</h3>
-        <span>DD/MM/AAAA - DD/MM/AAAA</span>
-      </div>
-
-      <div class="card">
-        <img src="images/jiraya.jpg" alt="Jiraya">
-        <h3>Jiraya</h3>
-        <span>DD/MM/AAAA - DD/MM/AAAA</span>
+      <div class="memory-card" *ngFor="let memoria of memorias">
+        <!-- <img [src]="memoria.foto || 'assets/default-photo.jpg'" alt="Foto de {{ memoria.nome }}" class="memory-photo" /> -->
+        <h2 class="memory-name">{{ memoria.nome }} {{ memoria.sobrenome }}</h2>
+        <span>
+          {{ memoria.dataNascimento | date:'yyyy-MM-dd' }} - {{ memoria.dataFalecimento | date:'yyyy-MM-dd' }}
+        </span>
+        <p class="memory-description">{{ memoria.mensagem }}</p>
       </div>
     </section>
 

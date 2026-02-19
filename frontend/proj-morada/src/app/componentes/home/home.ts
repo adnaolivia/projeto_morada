@@ -1,25 +1,31 @@
 import { Component, OnInit } from '@angular/core';
 import { RouterLink } from "@angular/router";
 import { RouterModule } from '@angular/router';
-import { ApiService } from '../../services/api.service';
+import { MemoriaService } from '../../services/memoria.service';
+import { Memoria } from '../../models/memoria.model';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-home',
-  imports: [RouterModule],
+  imports: [RouterModule, CommonModule],
   templateUrl: './home.html',
   styleUrl: './home.css',
 })
 export class Home implements OnInit {
-  constructor(private apiService: ApiService) {}
+
+  memorias: Memoria[] = [];
+
+  constructor(private memoriaService: MemoriaService) {}
 
   ngOnInit(): void {
-    this.apiService.getData().subscribe({
-      next: (response: any) => {
-        console.log('resposta da api:', response);
+    this.memoriaService.listarMemorias().subscribe({
+      next: (response) => {
+        this.memorias = response;
+        console.log('Memorias', response);
       },
       error: (err: any) => {
-        console.error('erro ao chamar a api:', err);
+        console.error('erro ao chamar buscar memoriass', err);
       }
-    })
+    });
   }
 }

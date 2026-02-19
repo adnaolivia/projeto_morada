@@ -7,7 +7,7 @@ import { Memoria } from "../models/memoria.model";
     providedIn: 'root'
 })
 export class MemoriaService {
-    private apiUrl = 'http://localhost:3000/memorias';
+    private apiUrl = 'http://127.0.0.1:8000/memorias/';
 
     constructor(private http: HttpClient) {}
 
