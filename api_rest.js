@@ -1,3 +1,4 @@
+// desconsiderar, foi so pra testes iniciais enquanto nao tinha o back
 import express from "express";
 import cors from "cors";
 
