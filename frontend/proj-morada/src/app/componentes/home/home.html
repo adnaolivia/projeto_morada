@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>In Memoriam - Grupo Morada</title>
+  <link rel="stylesheet" href="home.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container header-content">
+      <div class="logo">
+        <span class="logo-icon">✢</span>
+        <span class="logo-text">GRUPO MORADA</span>
+      </div>
+
+      <nav class="nav">
+        <ul>
+          <li><a href="#">Início</a></li>
+          <li><a href="#" class="active">In Memoriam</a></li>
+          <li><a href="#">Contato</a></li>
+          <li><a href="#">Login</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <main class="main">
+
+    <!-- TITLE -->
+    <section class="hero container">
+      <h1>In Memoriam</h1>
+
+      <div class="search-bar">
+        <input type="text" placeholder="Barra de pesquisa" />
+        <button>
+          🔍
+        </button>
+      </div>
+    </section>
+
+    <section class="create-memory container">
+      <button class="memory-button" routerLink="/criar-memoria">
+        <span class="heart">♡</span>
+        <span>Criar Nova<br>Memória</span>
+      </button>
+
+      <div class="memory-text">
+        <p>
+          Dedique um mural em memória de entes queridos que se foram,
+          mas que vivem em seu coração.
+        </p>
+        <p>
+          Viveremos para sempre na lembrança dos que nos amam.
+        </p>
+      </div>
+    </section>
+
+    <!-- sessao do mural -->
+    <section class="memories container">
+      <div class="card">
+        <img src="images/mufasa.jpg" alt="Mufasa">
+        <h3>Mufasa</h3>
+        <span>DD/MM/AAAA - DD/MM/AAAA</span>
+      </div>
+
+      <div class="card">
+        <img src="images/gwen-stacy.jpg" alt="Gwen Stacy">
+        <h3>Gwen Stacy</h3>
+        <span>DD/MM/AAAA - DD/MM/AAAA</span>
+      </div>
+
+      <div class="card">
+        <img src="images/padme.jpg" alt="Padmé Amidala">
+        <h3>Padmé Amidala</h3>
+        <span>DD/MM/AAAA - DD/MM/AAAA</span>
+      </div>
+
+      <div class="card">
+        <img src="images/dumbledore.jpg" alt="Alvo Dumbledore">
+        <h3>Alvo Dumbledore</h3>
+        <span>DD/MM/AAAA - DD/MM/AAAA</span>
+      </div>
+
+      <div class="card">
+        <img src="images/azuma.jpg" alt="Azuma Sarutobi">
+        <h3>Azuma Sarutobi</h3>
+        <span>DD/MM/AAAA - DD/MM/AAAA</span>
+      </div>
+
+      <div class="card">
+        <img src="images/tadashi.jpg" alt="Tadashi Hamada">
+        <h3>Tadashi Hamada</h3>
+        <span>DD/MM/AAAA - DD/MM/AAAA</span>
+      </div>
+
+      <div class="card">
+        <img src="images/stoico.jpg" alt="Stoico">
+        <h3>Stoico</h3>
+        <span>DD/MM/AAAA - DD/MM/AAAA</span>
+      </div>
+
+      <div class="card">
+        <img src="images/jiraya.jpg" alt="Jiraya">
+        <h3>Jiraya</h3>
+        <span>DD/MM/AAAA - DD/MM/AAAA</span>
+      </div>
+    </section>
+
+    <!-- PAGINATION -->
+    <section class="pagination container">
+      <button class="page active">1</button>
+      <button class="page">2</button>
+      <button class="page">3</button>
+      <button class="page">»</button>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 Grupo Morada. Todos os direitos reservados</p>
+    </div>
+  </footer>
+
+</body>
+</html>
+
+<!-- <p>home {{ name }}</p>
+
+<button [attr.aria-label]="idbutton" (click)="enviar($event)">clique</button>
+
+@if (deveMostrarTitulo) {
+    <h1>meu titulo</h1>
+} @else if (name == "morada") {
+    <h1>eba</h1>
+}
+@else {
+    <h1>nao foi verdadeiro</h1>
+} -->

@@ -1,0 +1,210 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  background-color: #7a7a7a;
+  padding: 20px 0;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: white;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  transition: opacity 0.2s ease;
+}
+
+.nav a:hover {
+  opacity: 0.7;
+}
+
+.nav .active {
+  text-decoration: underline;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  margin: 40px auto;
+}
+
+.hero h1 {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 500;
+  margin-bottom: 40px;
+  /* font-style: italic; */
+}
+
+.search-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #e6e6e6;
+  border-radius: 8px;
+  overflow: hidden;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.search-bar input {
+  flex: 1;
+  border: none;
+  padding: 12px;
+  background: transparent;
+  outline: none;
+}
+
+.search-bar button {
+  border: none;
+  background: transparent;
+  padding: 0 15px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* CREATE MEMORY */
+.create-memory {
+  background-color: #e0e0e0;
+  border-radius: 12px;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.memory-button {
+  background-color: #7a7a7a;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 25px;
+  width: 220px;
+  height: 120px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: background 0.2s ease;
+}
+
+.memory-button:hover {
+  background-color: #666;
+}
+
+.heart {
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+
+.memory-text {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* GRID */
+.memories {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.card {
+  background-color: #d9d9d9;
+  border-radius: 16px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.card h3 {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.card span {
+  font-size: 13px;
+  color: #666;
+}
+
+/* PAGINATION */
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 60px;
+}
+
+.page {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  background-color: #d0d0d0;
+  cursor: pointer;
+}
+
+.page.active {
+  background-color: #7a7a7a;
+  color: white;
+}
+
+/* FOOTER */
+.footer {
+  background-color: #7a7a7a;
+  padding: 20px 0;
+  text-align: center;
+  color: white;
+  font-size: 14px;
+}

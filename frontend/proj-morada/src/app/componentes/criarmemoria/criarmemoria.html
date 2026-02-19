@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>In Memoriam - Grupo Morada</title>
+  <!-- <link rel="stylesheet" href="home.css" /> -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header class="header">
+    <div class="container header-content">
+      <div class="logo">
+        <span class="logo-icon">✢</span>
+        <span class="logo-text">GRUPO MORADA</span>
+      </div>
+
+      <nav class="nav">
+        <ul>
+          <li><a href="#">Início</a></li>
+          <li><a href="#" class="active">In Memoriam</a></li>
+          <li><a href="#">Contato</a></li>
+          <li><a href="#">Login</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+<main class="main">
+
+  <section class="container form-section">
+    <h1>Criar Nova Memória</h1>
+
+    <form (ngSubmit)="salvarMemoria()" class="memory-form">
+
+      <div class="form-grid">
+
+        <!-- foto -->
+        <div class="photo-section">
+          <div class="photo-placeholder">
+            <span class="photo-icon">👤</span>
+          </div>
+
+          <label for="photo-upload" class="photo-button">
+            escolher foto
+          </label>
+          <input type="file" id="photo-upload" hidden />
+        </div>
+
+        <!-- campos -->
+        <div class="fields-section">
+
+          <div class="row">
+            <div class="form-group">
+              <label for="nome">Nome:</label>
+              <input type="text" [(ngModel)]="memoria.nome" name="nome" id="nome" placeholder="Nome" required/>
+            </div>
+
+            <div class="form-group">
+              <label for="sobrenome">Sobrenome:</label>
+              <input type="text" [(ngModel)]="memoria.sobrenome" name="sobrenome" id="sobrenome" placeholder="Sobrenome" required/>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="form-group">
+              <label for="data-nascimento">Data de Nascimento:</label>
+              <input type="text" [(ngModel)]="memoria.dataNascimento" name="dataNascimento" id="data-nascimento" placeholder="DD/MM/AAAA" required/>
+            </div>
+
+            <div class="form-group">
+              <label for="data-falecimento">Data de Falecimento:</label>
+              <input type="text" [(ngModel)]="memoria.dataFalecimento" name="dataFalecimento" id="data-falecimento" placeholder="DD/MM/AAAA" required/>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- MENSAGEM -->
+      <div class="form-group message-group">
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" [(ngModel)]="memoria.mensagem" name="mensagem" placeholder="Digite sua mensagem aqui..."></textarea>
+      </div>
+
+      <!-- BOTÃO -->
+      <div class="submit-container">
+        <button type="submit" class="submit-button">
+          <span class="heart">♡</span>
+          Criar Nova Memória
+        </button>
+      </div>
+
+    </form>
+  </section>
+
+</main>
