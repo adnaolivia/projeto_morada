@@ -82,4 +82,4 @@ OBS.: Saida esperada na porta 4200
 
 ## Observações
 - Algumas funcionalidades ainda estão em andamento para serem finalizadas.
-- última atualização em: 19/02/2026 23:43
+- última atualização em: 20/02/2026
