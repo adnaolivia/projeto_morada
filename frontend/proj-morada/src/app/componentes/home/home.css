@@ -69,7 +69,7 @@ body {
   font-size: 32px;
   font-weight: 500;
   margin-bottom: 40px;
-  /* font-style: italic; */
+  font-style: italic;
 }
 
 .search-bar {
@@ -138,6 +138,7 @@ body {
 }
 
 .memory-text {
+  font-family: 'Inter', sans-serif;
   font-size: 16px;
   line-height: 1.6;
 }
@@ -148,6 +149,16 @@ body {
   grid-template-columns: repeat(4, 1fr);
   gap: 30px;
   margin-bottom: 40px;
+}
+
+.memory-card {
+  background-color: #e0e0e0; /* Caixa dentro do padrão de cores */
+  border-radius: 16px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
 }
 
 .card {

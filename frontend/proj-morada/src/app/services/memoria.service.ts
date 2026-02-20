@@ -18,4 +18,12 @@ export class MemoriaService {
     listarMemorias(): Observable<Memoria[]> {
         return this.http.get<Memoria[]>(this.apiUrl);
     }
+
+    editarMemoria(memoria: Memoria): Observable<any> {
+        return this.http.put(this.apiUrl + (memoria as any).id + '/', memoria);
+    }
+
+    deletarMemoria(memoria: Memoria): Observable<any> {
+        return this.http.delete(this.apiUrl + (memoria as any).id + '/');
+    }
 }
