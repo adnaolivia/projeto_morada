@@ -13,10 +13,10 @@ O objetivo é oferecer um mural digital onde os usuários podem dedicar mensagen
 
 ## Protótipos
 ### Tela Inicial
-![Exemplo de tela inicial](../projeto_morada/frontend/proj-morada/public/images/mural.jpg)
+![Exemplo de tela inicial](frontend/proj-morada/public/images/mural.jpg)
 
 ### Tela Criar Memória
-![Formulário de criação de memória](../projeto_morada/frontend/proj-morada/public/images/criar%20memoria.jpg)
+![Formulário de criação de memória](frontend/proj-morada/public/images/criar-memoria.jpg)
 
 ---
 
