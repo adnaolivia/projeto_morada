@@ -3,6 +3,17 @@ import { Home } from './componentes/home/home';
 import { Criarmemoria } from './componentes/criarmemoria/criarmemoria';
 
 export const routes: Routes = [
-    { path: '', component: Home},
-    { path: 'criar-memoria', component: Criarmemoria}
+    {
+        path: '',
+        redirectTo: 'home',
+        pathMatch: 'full'
+    },
+    {
+        path: 'home',
+        component: Home
+    },
+    {
+        path: 'criar-memoria',
+        component: Criarmemoria
+    },
 ];
