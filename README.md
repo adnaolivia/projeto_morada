@@ -82,4 +82,5 @@ OBS.: Saida esperada na porta 4200
 
 ## Observações
 - Algumas funcionalidades ainda estão em andamento para serem finalizadas.
+- o CRUD está sendo feito somente pela API (acessando pelo id de cada memoria, na url. ex.: http://127.0.0.1:8000/memorias/1/)
 - última atualização em: 20/02/2026
